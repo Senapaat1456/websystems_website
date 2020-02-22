@@ -1,0 +1,45 @@
+body{
+  background-color: #4fb0c6;
+  margin: 0;
+}
+
+/* Navagation Bar Style */
+.Title{
+  font-family: sans-serif;
+  font-size: 225%;
+  font-weight: bold;
+  color: #3a2513;
+}
+.Big_Letter{
+  font-size: 150%;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.Menu_Bar{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+  background-color: #379392;
+  border-top: 2px solid #003151;
+  border-bottom: 2px solid #003151;
+  margin: 0;
+  padding: 0;
+}
+
+.Menu_Option{
+  font-family: sans-serif;
+
+  font-size: 150%;
+  padding: 5px 25px 5px 25px;
+  border-right: 5px solid #4fb0c6;
+
+
+
+
+}
+
+a{
+  color: #3a2513;
+}
