@@ -1,0 +1,19 @@
+#Leadership_List{
+
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items:stretch;
+  flex-wrap: wrap;
+}
+
+.Person{
+
+  margin: 30px;
+  background-color: white;
+  width: 300px;
+  height: 350px;
+
+
+}

@@ -1,0 +1,9 @@
+#main_body{
+
+display: flex;
+justify-content:space-around;
+
+}
+#ggplot2_generator_box{
+  margin: 30px;
+}

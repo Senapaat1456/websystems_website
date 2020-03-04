@@ -1,6 +1,9 @@
 body{
-  background-color: #4fb0c6;
   margin: 0;
+  background-color: #4fb0c6;
+}
+#main_body{
+
 }
 
 /* Navagation Bar Style */
@@ -9,6 +12,10 @@ body{
   font-size: 225%;
   font-weight: bold;
   color: #3a2513;
+  background-color: lightblue;
+}
+.subtitle{
+  font-size: 75%;
 }
 .Big_Letter{
   font-size: 150%;
@@ -22,8 +29,8 @@ body{
   flex-direction: row;
   justify-content:flex-start;
   background-color: #379392;
-  border-top: 2px solid #003151;
-  border-bottom: 2px solid #003151;
+  border-bottom: 3px solid #003151;
+
   margin: 0;
   padding: 0;
   flex-wrap: wrap;
@@ -33,11 +40,12 @@ body{
   font-family: sans-serif;
 
   font-size: 150%;
-  padding: 5px 25px 5px 25px;
-  border-right: 5px solid #4fb0c6;
+  padding: 5px 10px 5px 10px;
+  border-top: 3px solid #003151;
 
+  border-right: 5px solid #377E93;
 
-
+  flex-grow: 1;
 
 }
 
