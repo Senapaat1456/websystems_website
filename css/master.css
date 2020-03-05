@@ -49,6 +49,11 @@ body{
 
 }
 
+.Menu_Option:hover{
+  background-color: #46c2c0;
+  border-right: 5px solid #2e6e6d;
+}
+
 a{
   color: #3a2513;
 }
