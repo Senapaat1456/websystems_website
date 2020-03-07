@@ -1,3 +1,69 @@
 body{
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: 98%;
+    width: 98%;
+}
+
+#Graph{
+  width: 60%
+  height 40%;
+  border: 2px solid black;
+  border-radius: 2px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+#Top_Half{
+
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+#Right_Column{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+#Graph_Title{
+  font-size: 200%;
+}
+
+#Output_Box{
+
+  background-color: #fafafa;
+  border: 1px solid black;
+  margin-top: 0px;
+  height: 125px;
+  padding: 5px;
+  font-family: monospace;
+  font-size: 150%;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+}
+
+}
+#Bottom_Half{
+  margin-top: 20px;
+  height: 100%;
+}
+#Left_Column{
+  font-size: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 15px;
+}
+.small_header{
+  margin: 0;
+  margin-top: 3px;
+  padding: 0;
+}
+input{
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+
 }
