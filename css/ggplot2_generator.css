@@ -7,8 +7,8 @@ body{
 }
 
 #Graph{
-  width: 60%
-  height 40%;
+  width: 100%;
+  /* height 40%; */
   border: 2px solid black;
   border-radius: 2px;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
@@ -18,9 +18,14 @@ body{
 #Top_Half{
 
   display: flex;
+  flex-direction: row;
   justify-content: flex-end;
 
 }
+
+
+
+
 
 #Right_Column{
 
@@ -66,4 +71,20 @@ body{
 input{
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
 
+}
+
+@media (max-width: 500px) {
+  #Graph{
+    width: 85vw;
+  }
+  #Top_Half{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+  }
+  #Output_Box{
+    width: 90%;
+  }
 }

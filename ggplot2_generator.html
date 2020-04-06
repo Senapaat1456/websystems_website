@@ -10,6 +10,7 @@
     <div id="Top_Half">
 
       <div id="Left_Column">
+
         <h2>Enter Info</h2>
         <span><label for="data_set_input">Data Set Name (name used in R):</label>
           <input type="text" id="data_set_input" name="data_set_input"></span>
@@ -28,17 +29,28 @@
           <option value="Frequency">Frequency</option>
         </select></span>
 
+        <button type="button">
+          Update Graph
+        </button>
+
       </div>
+
       <div id="Right_Column">
+
         <div id="Graph_Title"> Example Graph </div>
         <img id="Graph" src="images/graphs/example_graph.jpg" alt="">
+
       </div>
+
     </div>
+
     <div id="Bottom_Half">
+
       <h3 class="small_header">Generated Code: </h3> <h4 class="small_header">Graph only shows an example of one of the lines. Colors will not show on exampe graph. All lines will be included in code output.</h4>
       <div id="Output_Box">
         ggplot(data = test_data, aes(x = x_data, y = y_data)) + geom_jitter()
       </div>
+
     </div>
 
 
