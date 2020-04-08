@@ -1,5 +1,6 @@
 body{
   margin: 0;
+  font-family: serif;
   background-color: #4fb0c6;
 }
 #main_body{
@@ -56,4 +57,14 @@ body{
 
 a{
   color: #3a2513;
+}
+.Section_Heading{
+  font-family: sans-serif;
+  font-size: 200%;
+  margin-top: 10px;
+}
+.Small_Heading{
+  font-family: sans-serif;
+  font-size: 150%;
+  margin-top: 5px;
 }

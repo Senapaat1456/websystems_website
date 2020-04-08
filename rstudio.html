@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>DAA - Instaling RStudio</title>
     <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/rstudio.css">
+
   </head>
 
   <body>
@@ -24,8 +26,65 @@
 
     <div id="main_body">
 
+      <div class="Section_Heading">R Studio</div>
+      <div class="info">R Studio is an IDE (Integrated Developement Enviorment) for writing code in R. R is a programing language similar to Python, but with a larger emphasis on statistics and data science. The DAA uses R and R Studio for most of their projects and competitions. R Studio has a lot of well defined features that the guide won't go over, but almost everything you could want to do with an IDE has an inplementation in R Studio. This includes functionalities such as Version Control (Git), importing and exporting data sets, and distrubted computing. A great resource is <a target="_blank" href="https://www.rdocumentation.org/"> rdocumentation.org</a>. Another great resource is <a href="https://stackoverflow.com/" target="_blank">stackoverflow.com</a>, if you have a question, most likly some else already has had a similar question and posted it to stackoverflow.  </div>
+      <div class="Small_Heading">This guide will teach you how to:</div>
+      <ol>
+        <li class="Content_List"><a href="#heading_1">Install R Studio</a> </li>
+        <li class="Content_List"><a href="#heading_2">Create a new R Notebook</a> </li>
+        <li class="Content_List"><a href="#heading_3">Install a new Package</a> </li>
+      </ol>
+
+      <div id="heading_1" class="Section_Heading">1. Installing R Studio</div>
+      <div class="info">
+        R Studio is simple to install. The steps are:
+        <ol>
+          <li>Navegate to <a href="https://rstudio.com/">rstudio.com</a>. This is the primary host for R Studio.</li>
+          <li>Click 'Download' in the top right corner.</li>
+          <img class="guide_images" src="images/download_button.png" alt="Displays a where the download button is." width=25%>
+          <li>Click to download the Open Source version of R Studio. </li>
+          <li>Select and download the version of R Studio for your computer under the header 'All Installers'</li>
+          <img class="guide_images" src="images/installers.png" alt="Displays where the correct downloads are." width=50%>
+          <li>Lastly, run in the installer.</li>
+          <li>If it works, when you launch R Studio, you should be greated by the homepage.</li>
+        </ol>
+      </div>
+      <div id="heading_2" class="Section_Heading">2. Creating a new R Notebook</div>
+      <div class="info">
+        Notebooks in R are helpful when you have lots of code for a given project that you only want to run parts of at a time. You can make 'chunks' of code that can be run independent of each other. Since R has minimal pre-runtime syntax checks, having your code broken into chunks helps avoid your code failing entirly when a single line of code has an error. To create a new notebook:
+        <ol>
+          <li>Click on 'file' in the top-left corner</li>
+          <li>Click on 'new file'</li>
+          <li>Click on 'R Notebook'</li>
+          <img class="guide_images" src="images/notebook.png" alt="A picture showing how to create an R Notebook in the menu." width="25%">
+        </ol>
+          <p>Like everything in R Studio there is multiple ways of doing things. There are at least 3 different ways to make a new Notebook, and this is just 1 of them. Never be afraid to expirment and use which ever method you like best. R Studio is a tool designed to be versitile and customizeable. You also might notice some exaple text in your Notebook when you first create it. Feel free to delete it all. You can disable this in the R Studio Settings.</p>
+          <p>To create a chunk the format is as follows. Notice that the charcters that comes before the brackets are the ` characters, also known as the grave accent not a single quote. The key for that above the tab key on most keyboards. The 'r' in the bracket says the programing language in the chunk is r (you can use python and other simlar langages in an R notebook too) and the everything that follows the r in the backets is the chunk name, this can be as short or as long as you want. You close a chunk with 3 more grave accents </p>
+          <img class="guide_images" src="images/notebook_example.png" alt="An example of a notebook layout" width="25%">
+        </div>
+
+    <div id="heading_3" class="Section_Heading">3. Instaling Packages in R Studio</div>
+    <div class="info">
+      The last thing I am going to show you is how to install a package in R Studio. Like many programing langages, the base language of R only has so many features, and you will hit a point where you want to do something that is not suported by base R. When you hit this point you have two options, one is to program that functionality your self, or know that someone else has already done it and published it.
+      <ol>
+        <li>To install the package, first you need to know what package has what you need. Ussualy a quick search on the internet can help you figure this out. For this example we will be adding the package 'XGBoost'</li>
+        <li>Start by going over the the right menu of R Studio and make sure the tab 'Packages' is open.</li>
+        <li>Then click 'Install Packages'</li>
+        <li>Type the name of package into the textbox and make sure that 'Install Dependencies' is clicked.</li>
+        <li>Click Install. Then wait.</li>
+        <li>Once it is done downloading, you need to activate it. There is two ways to do this. The first is under the packages tab, find the package in the list and just check the box next to the name. This presents with two issues, packages don't automatically load when you start R Studio so you would have to do this every time, and if you send your code to another programer, they won't know what packages you use. That is why you should use the  'library()' function. At the start of each chunk of code add the line 'library(package1,package2,...)' and list the packages you need. This will load the packages and let others know they need to install them if they are missing.</li>
+      </ol>
 
     </div>
+
+    <div class="info">
+      This has been a quick setup guide to R Studio. There is a lot more to learn, so never be afraid to ask others at DAA for help on any of this. There also many online resources that have great guides to learning R and how to use R Studio. NEver be afaid just to paste your error messages into google, its very likely you are not the firt person to run into a given error.
+    </div>
+
+    </div>
+
+
+
 
   </body>
 </html>

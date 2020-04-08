@@ -1,0 +1,15 @@
+#main_body{
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.Content_List{
+  margin-top: 5px;
+  font-weight: bold;
+}
+.info{
+   line-height: 1.5;
+}
+.guide_images{
+  border: 1px solid black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
