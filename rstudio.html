@@ -5,27 +5,37 @@
     <title>DAA - Instaling RStudio</title>
     <link rel="stylesheet" href="css/master.css">
     <link rel="stylesheet" href="css/rstudio.css">
-
+    <script defer src="js/moble_menu_bar_script.js"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
   </head>
 
   <body>
-
     <! Navagation Bar Setup >
-    <div class="Title">
-      <span class="Big_Letter"> D</span>ata <span class="Big_Letter"> A</span>nalytics <span class="Big_Letter"> A</span>ssociation, <span class="subtitle">Installing R Studio</span>
+    <div id = "header">
+      <div class="Title">
+        <span class="Big_Letter"> D</span>ata <span class="Big_Letter"> A</span>nalytics <span class="Big_Letter"> A</span>ssociation, <span class="subtitle">Installing R Studio</span>
+      </div>
+
+      <div id="menu_button">
+        <svg viewBox="0 0 100 80" width="30" height="30">
+          <rect fill="white" width="100" height="15"></rect>
+          <rect fill="white" y="30" width="100" height="15"></rect>
+          <rect fill="white" y="60" width="100" height="15"></rect>
+        </svg>
+      </div>
+      <nav id="navation">
+        <ul class="Menu_Bar">
+            <li class="Menu_Option"><a style="text-decoration:none" href = "index.html">Home</a></li>
+            <li class="Menu_Option"><a style="text-decoration:none" href = "rstudio.html">Installing R Studio</a></li>
+            <li class="Menu_Option"><a style="text-decoration:none" href = "ggplot2.html">GGPlot2 Basics</a></li>
+            <li class="Menu_Option"><a style="text-decoration:none" href = "linreg.html">Intro to Linear Regression</a></li>
+            <li class="Menu_Option"><a style="text-decoration:none" href = "calandar.html">Calandar & Events</a></li>
+            <li class="Menu_Option"><a style="text-decoration:none" href = "leadership.html">DAA Leadership</a></li>
+        </ul>
+      </nav>
     </div>
 
-    <ul class="Menu_Bar">
-        <li class="Menu_Option"><a style="text-decoration:none" href = "index.html">Home</a></li>
-        <li class="Menu_Option"><a style="text-decoration:none" href = "rstudio.html">Installing RStudio</a></li>
-        <li class="Menu_Option"><a style="text-decoration:none" href = "ggplot2.html">GGPlot2 Basics</a></li>
-        <li class="Menu_Option"><a style="text-decoration:none" href = "linreg.html">Intro to Linear Regression</a></li>
-        <li class="Menu_Option"><a style="text-decoration:none" href = "calandar.html">Calandar & Events</a></li>
-        <li class="Menu_Option"><a style="text-decoration:none" href = "leadership.html">DAA Leadership</a></li>
-    </ul>
-
     <div id="main_body">
-
       <div class="Section_Heading">R Studio</div>
       <div class="info">R Studio is an IDE (Integrated Developement Enviorment) for writing code in R. R is a programing language similar to Python, but with a larger emphasis on statistics and data science. The DAA uses R and R Studio for most of their projects and competitions. R Studio has a lot of well defined features that the guide won't go over, but almost everything you could want to do with an IDE has an inplementation in R Studio. This includes functionalities such as Version Control (Git), importing and exporting data sets, and distrubted computing. A great resource is <a target="_blank" href="https://www.rdocumentation.org/"> rdocumentation.org</a>. Another great resource is <a href="https://stackoverflow.com/" target="_blank">stackoverflow.com</a>, if you have a question, most likly some else already has had a similar question and posted it to stackoverflow.  </div>
       <div class="Small_Heading">This guide will teach you how to:</div>

@@ -9,6 +9,7 @@ body{
 
 /* Navagation Bar Style */
 .Title{
+  margin-top: 0;
   font-family: sans-serif;
   font-size: 225%;
   font-weight: bold;
@@ -24,11 +25,15 @@ body{
   font-style: italic;
 }
 
+#menu_button{
+  display: none;
+}
+
 .Menu_Bar{
   list-style: none;
   display: flex;
   flex-direction: row;
-  justify-content:flex-start;
+  justify-content:space-between;
   background-color: #379392;
   border-bottom: 3px solid #003151;
 
@@ -54,6 +59,60 @@ body{
   background-color: #46c2c0;
   border-right: 5px solid #2e6e6d;
 }
+.Menu_Option:active{
+  background-color: #46c2c0;
+  border-right: 5px solid #2e6e6d;
+}
+
+@media (max-width: 600px) {
+  #header{
+    margin-top: 0;
+      box-shadow: 0 -15 20 40 black;
+      position: fixed;
+      box-sizing: border-box;
+      left: 0;
+      right: 0;
+      left: 0;
+      display: flex;
+      flex-direction: row;
+      font-size: 50%;
+      justify-content:space-between;
+      align-items:center;
+      background-color: lightblue;
+      padding: 10px;
+      border-bottom: 5px solid #377E93;
+
+  }
+  #menu_button{
+    display: flex;
+  }
+  navation{
+    position: absolute;
+    right: 0;
+    top: 100%;
+    display: none;
+  }
+  navation.open{
+    display:flex;
+  }
+  .Menu_Bar{
+    flex-direction: column;
+  }
+  #main_body{
+    padding-top: 60px;
+  }
+  .Menu_Option{
+    border-left: 3px solid #003151;
+
+  }
+}
+@media (max-width: 400px){
+  #header{
+    font-size: 40%;
+  }
+}
+
+
 
 a{
   color: #3a2513;
