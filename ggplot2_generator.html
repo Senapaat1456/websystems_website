@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>GGPlot2 Generator</title>
     <link rel="stylesheet" href="css/ggplot2_generator.css">
+    <script defer src="js/ggplot2_generator.js"></script>
+    <script defer src="js/graph_updater.js"></script>
   </head>
   <body>
 
@@ -12,25 +14,29 @@
       <div id="Left_Column">
 
         <h2>Enter Info</h2>
-        <span><label for="data_set_input">Data Set Name (name used in R):</label>
-          <input type="text" id="data_set_input" name="data_set_input"></span>
-        <span><label for="X_axis_input">X-Axis Label:</label>
-          <input type="text" id="X_axis_input" name="X_axis_input"></span>
-        <span><label for="data_set_input">Y-Axis Label (seperate by commas for multiple response variables):</label>
-          <input type="text" id="X_axis_input" name="X_axis_input"></span>
-        <span><label for="data_set_input">Line Color (hex value, seperate by commas for multiple response variables):</label>
-          <input type="text" id="X_axis_input" name="X_axis_input"></span>
+        <span class="data_entry_span"><label for="data_set_input">Data Set Name (name used in R):</label>
+          <input type="text" id="Data_Set_Input" name="data_set_input"></span>
+        <span class="data_entry_span"><label for="X_axis_input">Independant Varaibles:</label>
+          <input type="text" id="X_Axis_Input" name="X_axis_input"></span>
+        <span class="data_entry_span"><label for="y_axis_input">Dependent Variables (seperate by commas for multiple response variables):</label>
+          <input type="text" id="Y_Axis_Input" name="y_axis_input"></span>
+        <span class="data_entry_span"><label for="color_input">Line Colors (hex value, seperate by commas for multiple response variables):</label>
+          <input type="text" id="Color_Input" name="color_input"></span>
+        <span class="data_entry_span"><label for="X_Axis_Label">X Axis Label(hex value, seperate by commas for multiple response variables):</label>
+          <input type="text" id="X_Axis_Label" name="X_Axis_Label"></span>
+        <span class="data_entry_span"><label for="Y_Axis_Label">Y Axis Label (hex value, seperate by commas for multiple response variables):</label>
+          <input type="text" id="Y_Axis_Label" name="Y_Axis_Label"></span>
         <span>
         <label for="Graph_Type">Type of Graph: </label>
         <select id="Graph_Type" name="Graph_Type">
-          <option value="Smooth">Smooth</option>
-          <option value="Segment">Segment</option>
-          <option value="Point">Point</option>
-          <option value="Frequency">Frequency</option>
+          <option value="smooth">Smooth</option>
+          <option value="point">Point</option>
+          <option value="line">Line</option>
+          <option value="step">Step</option>
         </select></span>
 
-        <button type="button">
-          Update Graph
+        <button id="generator_button" type="button">
+          Generate Code
         </button>
 
       </div>
@@ -38,7 +44,7 @@
       <div id="Right_Column">
 
         <div id="Graph_Title"> Example Graph </div>
-        <img id="Graph" src="images/graphs/example_graph.jpg" alt="">
+        <img id="Graph" src="images/graphs/smooth_graph.png" alt="An example graph">
 
       </div>
 
