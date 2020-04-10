@@ -23,8 +23,11 @@ center_photo = document.getElementById('center_image');
 right_photo = document.getElementById('right_image');
 
 left_photo.src = images[i];
+left_photo.alt = images_desc[i];
 center_photo.src = images[i+1];
+center_photo.alt = images_desc[i+1];
 right_photo.src = images[i+2];
+right_photo.alt = images_desc[i+2];
 
 var timer = setInterval(switch_image,pause_time);
 
@@ -32,7 +35,10 @@ function switch_image(){
 
   i = (i+1)%images.length
   left_photo.src = images[i];
+  left_photo.alt = images_desc[i];
   center_photo.src = images[(i+1)%images.length];
+  center_photo.alt = images_desc[(i+1)%images.length];
   right_photo.src = images[(i+2)%images.length];
+  right_photo.alt = images_desc[(i+2)%images.length];
 
 }
