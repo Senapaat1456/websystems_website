@@ -86,13 +86,13 @@ body{
   #menu_button{
     display: flex;
   }
-  navation{
+  nav{
     position: absolute;
     right: 0;
     top: 100%;
     display: none;
   }
-  navation.open{
+  nav.open{
     display:flex;
   }
   .Menu_Bar{
