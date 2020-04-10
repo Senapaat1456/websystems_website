@@ -35,11 +35,35 @@
   margin-left: 100px;
   margin-right: 100px;
   margin-top: 100px;
-  word-spacing: 125%;
+  word-spacing: 115%;
   line-height: 1.5;
 }
 
 #name_header{
   font-size: 125%;
   font-style: italic;
+}
+
+@media (max-width: 600px) {
+  #left_image{
+    display: none;
+  }
+  #right_image{
+    display: none;
+  }
+  #slideshow_container{
+    width: 90%;
+    height: 200px;
+  }
+  #center_image{
+    width: 80%;
+    height: 80%;
+  }
+  #group_info{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 30px;
+    word-spacing: 115%;
+    line-height: 1.5;
+  }
 }
