@@ -16,26 +16,50 @@
       <div id="Left_Column">
 
         <h2>Enter Info</h2>
-        <span class="data_entry_span"><label for="data_set_input">Datafame Name (name used in R):</label>
-          <input type="text" id="Data_Set_Input" name="data_set_input"></span>
-        <span class="data_entry_span"><label for="X_axis_input">Independant Varaibles:</label>
-          <input type="text" id="X_Axis_Input" name="X_axis_input"></span>
-        <span class="data_entry_span"><label for="y_axis_input">Dependent Variables (seperate by commas for multiple response variables):</label>
-          <input type="text" id="Y_Axis_Input" name="y_axis_input"></span>
-        <span class="data_entry_span"><label for="color_input">Line Colors (hex value, seperate by commas for multiple response variables):</label>
-          <input type="text" id="Color_Input" name="color_input"></span>
-        <span class="data_entry_span"><label for="X_Axis_Label">X Axis Label(hex value, seperate by commas for multiple response variables):</label>
-          <input type="text" id="X_Axis_Label" name="X_Axis_Label"></span>
-        <span class="data_entry_span"><label for="Y_Axis_Label">Y Axis Label (hex value, seperate by commas for multiple response variables):</label>
-          <input type="text" id="Y_Axis_Label" name="Y_Axis_Label"></span>
+        <span class="data_entry_span">
+          <label for="Data_Set_Input">Datafame Name (name used in R):
+            <input type="text" id="Data_Set_Input" name="data_set_input">
+          </label>
+        </span>
+        <span class="data_entry_span">
+          <label for="X_Axis_Input">Independant Varaibles:
+            <input type="text" id="X_Axis_Input" name="X_axis_input">
+          </label>
+        </span>
+        <span class="data_entry_span">
+          <label for="Y_Axis_Input">Dependent Variables (seperate by commas for multiple response variables):
+            <input type="text" id="Y_Axis_Input" name="y_axis_input">
+          </label>
+        </span>
+
+        <span class="data_entry_span">
+          <label for="Color_Input">Line Colors (hex value, seperate by commas for multiple response variables):
+            <input type="text" id="Color_Input" name="color_input">
+          </label>
+        </span>
+
+        <span class="data_entry_span">
+          <label for="X_Axis_Label">X Axis Label(hex value, seperate by commas for multiple response variables):
+            <input type="text" id="X_Axis_Label" name="X_Axis_Label">
+          </label>
+        </span>
+
+        <span class="data_entry_span">
+          <label for="Y_Axis_Label">Y Axis Label (hex value, seperate by commas for multiple response variables):
+            <input type="text" id="Y_Axis_Label" name="Y_Axis_Label">
+          </label>
+        </span>
+
         <span>
-        <label for="Graph_Type">Type of Graph: </label>
-        <select id="Graph_Type" name="Graph_Type">
-          <option value="smooth">Smooth</option>
-          <option value="point">Point</option>
-          <option value="line">Line</option>
-          <option value="step">Step</option>
-        </select></span>
+          <label for="Graph_Type">Type of Graph:
+            <select id="Graph_Type" name="Graph_Type">
+              <option value="smooth">Smooth</option>
+              <option value="point">Point</option>
+              <option value="line">Line</option>
+              <option value="step">Step</option>
+            </select>
+          </label>
+        </span>
 
         <button id="generator_button" type="button">
           Generate Code
